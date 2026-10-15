@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Sara - Galería de Productos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- PERSONALIZADOS -->
+    <style>
+        /* Ajuste para las imágenes de los productos */
+        .product-img-fit {
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Header / Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="index.html"><i class="bi bi-shop"></i> Tienda Sara</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex mx-auto my-2 my-lg-0 w-50">
+                    <input class="form-control me-2" type="search" placeholder="Buscar productos...">
+                    <button class="btn btn-warning" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html"><i class="bi bi-cart3"></i> Carrito</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container my-4">
+        <div class="row">
+            
+            <!-- Sidebar Filtros -->
+            <div class="col-md-3 mb-4">
+                <div class="card p-3 shadow-sm border-0">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-funnel"></i> Filtrar por:</h5>
+                    <hr>
+                    <div class="mb-3">
+                        <h6>Categoría</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="cat1" checked>
+                            <label class="form-check-label" for="cat1">Muebles y TV</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="cat2">
+                            <label class="form-check-label" for="cat2">Electrónica</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h6>Precio</h6>
+                        <input type="range" class="form-range" min="0" max="10000" id="precioRange">
+                        <small class="text-muted">Hasta: $10,000</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grilla de Productos -->
+            <div class="col-md-9">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4>Centros de Entretenimiento y Muebles</h4>
+                    <select class="form-select w-auto">
+                        <option selected>Ordenar por: Relevancia</option>
+                        <option value="1">Precio: Menor a Mayor</option>
+                        <option value="2">Precio: Mayor a Menor</option>
+                    </select>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    
+                    <!-- Producto 1 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <span class="badge bg-danger position-absolute m-2">Oferta</span>
+                            <!-- Imagen del Producto 1 -->
+                            <img src="img/Colchón Matrimonial Restonic Aveline.png" class="card-img-top product-img-fit" alt="Mueble TV">
+                            <div class="card-body">
+                                <h6 class="card-title fw-bold">Colchón Matrimonial Restonic Aveline</h6>
+                                <!-- Sección de Precios -->
+                                <p class="text-danger fw-bold fs-5 mb-0">$5,199 <small class="text-muted text-decoration-line-through fs-6">$6,699</small></p>
+                                <small class="text-success"><i class="bi bi-truck"></i> Envío gratis</small>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <a href="carrito.html" class="btn btn-outline-primary w-100"><i class="bi bi-cart-plus"></i> Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <!-- Imagen del Producto 2 -->
+                            <img src="img/Centro De Entretenimiento Hasta 70 Artis Bossa.jpg" class="card-img-top product-img-fit" alt="Mesa TV">
+                            <div class="card-body">
+                                <h6 class="card-title fw-bold">Centro De Entretenimiento Hasta 70 Artis Bossa
+                                <p class="fw-bold fs-5 mb-0">$8,099</p>
+                                <small class="text-success"><i class="bi bi-truck"></i> Envío gratis</small>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <a href="carrito.html" class="btn btn-outline-primary w-100"><i class="bi bi-cart-plus"></i> Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <span class="badge bg-danger position-absolute m-2">Oferta</span>
+                            <!-- Imagen del Producto 3 -->
+                            <img src="img/comedior.png" class="card-img-top product-img-fit" alt="Mueble Canadá">
+                            <div class="card-body">
+                                <h6 class="card-title fw-bold">Comedor Santino con 4 Sillas y 1 Banca</h6>
+                                <!-- Sección de Precios -->
+                                <p class="text-danger fw-bold fs-5 mb-0">$7,999 <small class="text-muted text-decoration-line-through fs-6">$2,199</small></p>
+                                <small class="text-success"><i class="bi bi-truck"></i> Envío gratis</small>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <a href="carrito.html" class="btn btn-outline-primary w-100"><i class="bi bi-cart-plus"></i> Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Paginación -->
+                <nav class="mt-4">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

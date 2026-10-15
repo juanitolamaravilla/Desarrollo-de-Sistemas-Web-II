@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Sara - Carrito de Compras</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- PERSONALIZADOS -->
+    <style>
+        .cart-img-fit {
+            width: 100px;
+            height: 80px;
+            object-fit: center;
+            object-position: center;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Header / Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="index.html"><i class="bi bi-shop"></i> Tienda Sara</a>
+            <div class="ms-auto">
+                <a href="productos.html" class="btn btn-outline-light btn-sm"><i class="bi bi-arrow-left"></i> Seguir comprando</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal del Carrito -->
+    <div class="container my-5">
+        <h2 class="mb-4"><i class="bi bi-cart3"></i> Tu Carrito de Compras</h2>
+
+        <div class="row">
+            
+            <!-- Lista de productos seleccionados -->
+            <div class="col-lg-8 mb-4">
+                
+                <!-- PRODUCTO 1 -->
+                <div class="card shadow-sm border-0 p-3 mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center">
+                            <img src="img/Pantalla Smart TV Hyundai 65 Pulgadas QLED 4K Ultra HD.png" class="rounded cart-img-fit" alt="Pantalla LED">
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="fw-bold mb-1">Pantalla Smart TV Hyundai 65 Pulgadas QLED 4K Ultra HD</h6>
+                            <small class="text-muted">Vendido por: Tienda Sara</small>
+                            <br>
+                            <a href="#" class="text-danger small text-decoration-none"><i class="bi bi-trash"></i> Eliminar</a>
+                        </div>
+                        <div class="col-md-3 my-2 my-md-0">
+                            <label class="small text-muted">Cantidad:</label>
+                            <input type="number" class="form-control form-control-sm w-75" value="1" min="1">
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <span class="fw-bold fs-5">$8,999</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 2 -->
+                <div class="card shadow-sm border-0 p-3 mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center">
+                            <img src="img/Consola Nintendo Switch 2.png" class="rounded cart-img-fit" alt="Consola de Videojuegos">
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="fw-bold mb-1">Consola Nintendo Switch 2</h6>
+                            <small class="text-muted">Vendido por: Tienda Sara</small>
+                            <br>
+                            <a href="#" class="text-danger small text-decoration-none"><i class="bi bi-trash"></i> Eliminar</a>
+                        </div>
+                        <div class="col-md-3 my-2 my-md-0">
+                            <label class="small text-muted">Cantidad:</label>
+                            <input type="number" class="form-control form-control-sm w-75" value="1" min="1">
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <span class="fw-bold fs-5">$10,599</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alerta de Envío Gratis -->
+                <div class="alert alert-success d-flex align-items-center shadow-sm" role="alert">
+                    <i class="bi bi-truck fs-4 me-2"></i>
+                    <div>¡Felicidades! Tienes <strong>Envío Gratis</strong> en este pedido.</div>
+                </div>
+            </div>
+
+            <!-- Resumen de compra -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm border-0 p-3">
+                    <h5 class="fw-bold mb-3">Resumen de Compra</h5>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Subtotal:</span>
+                        <span>$19,598</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2 text-success">
+                        <span>Envío:</span>
+                        <span>¡Gratis!</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-4 fs-5 fw-bold">
+                        <span>Total:</span>
+                        <span class="text-primary">$19,598</span>
+                    </div>
+                    <button class="btn btn-primary btn-lg w-100 mb-2 fw-bold">Proceder al pago</button>
+                    <a href="productos.html" class="btn btn-link text-muted w-100 text-center text-decoration-none">Seguir comprando</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
